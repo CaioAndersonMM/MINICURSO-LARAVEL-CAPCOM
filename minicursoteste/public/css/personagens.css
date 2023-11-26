@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f; /* Cor de fundo mais escura */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards */
+    align-items: flex-start;
+    color: #fff; /* Cor do texto para melhor legibilidade no fundo escuro */
+}
+
+.character-card {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o conteúdo do card */
+    transition: box-shadow 0.3s; /* Efeito de transição na sombra */
+}
+
+.character-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Efeito de sombra ao passar o mouse */
+}
+
+.character-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeitos de transição */
+    box-shadow: 0 0 0 0px transparent; /* Sombra inicialmente transparente e sem deslocamento */
+}
+
+.character-card:hover .character-image {
+    transform: scale(1.18); /* Aumenta a escala da imagem ao passar o mouse */
+    box-shadow: 0 -16px 46px 10px #00509e; /* Adiciona uma borda azul escura ao passar o mouse */
+}
+
+.character-name {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.character-description {
+    margin-top: 10px;
+    color: #555;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.action-button {
+    padding: 8px 16px;
+    background-color: #808080; /* Cinza */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s; /* Efeito de transição na cor de fundo */
+}
+
+.action-button:hover {
+    background-color: #555; /* Nova cor de fundo ao passar o mouse */
+}
