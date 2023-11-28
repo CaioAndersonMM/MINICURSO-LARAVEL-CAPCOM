@@ -97,3 +97,27 @@ input[type="file"] {
 h1 {
     text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
 }
+a{
+    text-decoration: none;
+}
+
+.action-button.edit {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.action-button.edit:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Estilos específicos para o botão "Excluir" */
+.action-button.delete {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.action-button.delete:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
