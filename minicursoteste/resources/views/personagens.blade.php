@@ -108,6 +108,12 @@
         </div>
     </div>
 
+    <div class="character-card"  style="background: rgba(0, 0, 0, 0);">
+        <div class="button-container">
+            <a href="{{route('create.personagem')}}" class="action-button" style="background: green;">Adicionar Personagem</a>
+        </div>
+    </div>
+
     <!-- Adicione mais blocos de personagem conforme necessário -->
 
 </body>

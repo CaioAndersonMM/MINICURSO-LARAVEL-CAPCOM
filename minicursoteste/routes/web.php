@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PersonagensController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +28,10 @@ Route::get('/personagens', function () {
     return view('personagens');
 });
 
-Route::get('/personagens/{id}', function ($id) {
+Route::get('/personagem/{id}', function ($id) {
     return view('personagem', ['id' => $id]);
 })->name('detalhes');
+
+Route::get('/personagens/create', [PersonagensController::class, 'create'])->name('create.personagem');
+
+Route::post('/addPersonagem','PersonagemController@adicionarPersonagem')->name('adicionar.personagem');
