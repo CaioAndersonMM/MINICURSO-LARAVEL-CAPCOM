@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PersonagensController;
-
+use App\Http\Controllers\PersonagemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +35,12 @@ Route::get('/personagem/{id}', function ($id) {
 Route::get('/personagens/create', [PersonagensController::class, 'create'])->name('create.personagem');
 
 Route::post('/addPersonagem','PersonagemController@adicionarPersonagem')->name('adicionar.personagem');
+
+Route::get('/personagens2', [PersonagemController::class, 'index'])->name('personagens2');
+
+Route::get('/personagens/edit/{id}', [PersonagemController::class, 'editar'])->name('editar');
+
+Route::get('/personagens/delete/{id}', [PersonagemController::class, 'deletarPersonagem'])->name('excluir');
+
+Route::put('/personagens/{id}/atualizar', [PersonagemController::class, 'atualizarPersonagem'])->name('atualizar.personagem');
+
